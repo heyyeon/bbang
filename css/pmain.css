@@ -23,7 +23,6 @@
 
   header {
     width:100%;
-    height: 280px;
   }
 
 a{
@@ -81,7 +80,7 @@ main form .field:focus-within{
 
 header h1 a{
   width: 280px;
-  height: 280px;
+  height: 200px;
   display: block;
   background:url('../images/logo.png') no-repeat center center;
   background-size: 80%;
@@ -97,7 +96,6 @@ header h1 a{
   .logo {
     margin:0 auto;
     display: block;
-    padding-bottom:30px;
   }
   
   button, input, optgroup, select, textarea {
@@ -230,51 +228,53 @@ main form button:focus {
 .cb a {position:relative; left:120px; text-decoration: underline; color:#0D4790; font-weight:bold;}
 
 .id_search {
-  margin:30px 0px 100px 0px;
+  margin:20px 0px;
   text-align:center;
+}
+.id_search a{
+  font-size: 14px;
+  color: #777;
+}
+.id_search strong {
+  color:#111;
+  font-weight: bold;
 }
 .id_search a:hover {
   color:#5a90d3;
+  text-decoration-line: underline;
+}
+.id_search a:hover strong {
+  color:#0D4790;
   font-weight:bold;
 }
-.id_search a{
-  font-weight: bold;
-  font-size: 14px;
-  text-decoration-line: underline;
-  color: #555;
-}
 .sns {
-    margin:0 auto;
+    margin:50px auto;
     text-align:center;
 }
 .sns strong {
     font-weight:bold;
     font-size:17px;
 }
-.sns ul > li > a > img {
+.sns_icon li a img {
   display:block;
   width:40px;
-  padding:20px;
   margin:0 auto;
 }
 .sns_icon {
   display:flex;
   justify-content: center;
-  padding-top:20px;
 }
-.r_banner {
-  margin: 0 auto;
-  width:393px;
+.sns_icon li {
+  padding:2%;
 }
-footer{
+footer {
   width:100%;
-   border-top:1px solid #ccc;
+  border-top:1px solid #ccc;
 }
 footer p{
-  padding-top:80px;
-  padding-bottom:30px;
     font-weight: 500;    
     color: #333;
     text-align:center;
     vertical-align: 60px;
+    margin:7% auto;
 }

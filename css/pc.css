@@ -157,21 +157,22 @@ font-size: 18px;
   width: 360px;height: 450px;
 }
 .maga1 .bg{
-  height: 100px; width: 315px;
+  height: 100px; width: 348px;
   position: absolute;
   bottom: 20px; left: 5px;
   background: #52221D;
 }
 .maga1 p{
   color: #fff;
-  line-height: 180%;
-  padding-left: 15px;
+  line-height: 210%;
+  padding-left: 10px;
 }
 .maga1 p:first-child{
-  font-size: 17px;
+  font-size: 16px;
   font-weight: bold;
   padding-top: 5px;
 }
+
 .fa-solid {
         position:absolute;
         top:180px;
@@ -192,10 +193,9 @@ top: 60%;
 }
 .key {
   width: 1250px;
-  height: 700px;
+  height: 550px;
   margin: 0 auto;
 }
-.k_h2{ margin-left: 45px;}
 .keybox1 {
   margin: 0 auto;
   width: 650px;
@@ -206,32 +206,32 @@ top: 60%;
   margin-bottom: 30px;
 }
 .k_page1 img {
-  width: 350px; height: 250px;
+  width: 290px; height: 190px;
   margin-right: 20px;
   object-fit: cover;
 }
 .k_page1 > dl {
-  width: 320px;
+  width: 300px;
 }
 .k_page1 > dl > dd {
   font-family: 'NanumSquareRound';
   font-weight: normal;
   font-style: normal;
-  font-size: 17px;
-  line-height: 20px;
-  margin-bottom: 15px;
-  margin-left: 5px;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 12px;
+  margin-left: 1px;
 }
 .k_page1 > dl > dt, .k_page1 > dl > .k01{
   font-family: 'SANJUGotgam', sans-serif, arial;
   font-weight: bold;
   font-style: normal;
-  font-size: 22px;
-  margin:15px 5px ;
+  font-size: 20px;
+  margin: 11px 5px ;
 }
 .keySlide {
   position: relative;
-  width: 1500px; height: 100%;
+  width: 1250px; height: 100%;
   overflow: hidden;
 }
 
@@ -449,4 +449,5 @@ address{
   cursor: pointer;
   z-index: 99;
   border: 1px solid #ffffff70;
+  display: none;
 }

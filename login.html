@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BBang</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/pmain.css">
     <link rel="stylesheet" href="./css/reset.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -48,7 +48,7 @@
                     <button>로그인</button>
                 </form>
                 <p class="id_search">
-                    <a href="#">아이디와 비밀번호가 기억나지 않으세요?</a>
+                    <a href="#"><strong>아이디</strong>와 <strong>비밀번호</strong>가 기억나지 않으세요?</a>
                 </p>
                 <div class="sns">
                     <strong>SNS 로그인</strong>
@@ -65,18 +65,17 @@
                     </ul>
                 </div>
             </main>
-            <p class="r_banner">
-                <img src="./images/random01.png" alt="" id="ranbanner">
-            </p>
             <footer>
+                <p>
+                    <img src="./images/random01.png" alt="" id="ranbanner">
+                </p>
                 <p>BBangGaWa&copy;All Rights Reserved.</p>
             </footer>
         </div>
     </div>
     <script>
         img_num = Math.floor(Math.random()*3+1);
-       document.getElementById('ranbanner').src="./images/random0"+img_num+".png";
-
-   </script>
+        document.getElementById('ranbanner').src="./images/random0"+img_num+".png";
+    </script>
 </body>
 </html>

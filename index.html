@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <title>빵가워</title>
     <!-- 1. 초기화 -->
-    <link href="./css/mreset.css" rel="stylesheet" type="text/css">
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
     <!-- 2. 기본서식 -->
     <link href="./css/base.css" rel="stylesheet" type="text/css">
     <!-- 3. 공통서식 -->
@@ -14,7 +14,7 @@
     <!-- pc -->
     <link href="./css/pc.css" rel="stylesheet" type="text/css">
     <!-- 로그인 -->
-    <link rel="stylesheet" href="./login.html" type="text/css">
+    <link rel="stylesheet" href="./plogin.html" type="text/css">
     <!-- 아이콘 폰트 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -31,7 +31,7 @@
       </h1>
       <nav class="lnb">
         <ul>
-          <li><a href="./login.html" title="로그인">로그인</a></li>
+          <li><a href="./plogin.html" title="로그인">로그인</a></li>
           <li><a href="mypage.html" title="마이페이지">마이페이지</a></li>
           <li><select name="Language" id="lang">
             <option value="">Language</option>
@@ -478,8 +478,6 @@ let Timer2 = setInterval(changeBgcolor, 3000);
         </div>
       </div>
       <div class="swiper-pagination"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
     </div>
   </section>
 
@@ -535,6 +533,21 @@ let Timer2 = setInterval(changeBgcolor, 3000);
   $('html,body').animate({scrollTop:'0px'},300);
   return false;//새로고침 방지
 });
+
+
+$(window).scroll(function(){
+  let top = $(this).scrollTop();
+  console.log(top);
+
+  if(top>=1200){
+    $('#top_btn').fadeIn();
+  }else{
+    $('#top_btn').fadeOut();
+  }
+});
+
+
+
 
 img_num = Math.floor(Math.random()*3+1);
 document.getElementById('banner').src="./images/banner0"+img_num+".png";
